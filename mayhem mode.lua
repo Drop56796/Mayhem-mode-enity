@@ -70,4 +70,13 @@ coroutine.wrap(function()
     end
 end)()
 
+-- Manic Eyes
+coroutine.wrap(function()
+    while true do
+        wait(math.random(1,100))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/ObfuscatedEntities/Manic%20Eyes-obfuscated.lua"))()
+    end
+end)()
+
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/loader.lua'))()
