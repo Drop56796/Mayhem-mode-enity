@@ -33,7 +33,7 @@ end)()
 -- Manci Rush
 coroutine.wrap(function()
     while true do
-        wait(math.random(800,900))
+        wait(math.random(890,950))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(1)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/Manic%20Rush.lua"))()
