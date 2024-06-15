@@ -23,7 +23,7 @@ end)()
 -- Hard Obsession
 coroutine.wrap(function()
     while true do
-        wait(math.random(700,900))
+        wait(math.random(300,400))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(1)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/Hard%20Obsession.lua"))()
