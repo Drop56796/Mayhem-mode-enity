@@ -1,13 +1,13 @@
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Mayhem Mode V0.2.1",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed and Another Mayhem Mode V0.2.1",true)
 wait(3.5)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("by Darkness",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("The Fixed mode by Darkness",true)
 wait(3.5)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Original Version Mayhem mode by Ame Another Version Mayhem by Darkness",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Original Version Mayhem mode by Ame Fixed and Another Version Mayhem by Darkness",true)
 wait(3.5)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("try to Escape and survive the enity Good luck.",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("try to Escape and survive the enity Good luck How Joe with her",true)
 wait(3.5)
 
 -- Twiser
