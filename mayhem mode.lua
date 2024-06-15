@@ -70,6 +70,14 @@ coroutine.wrap(function()
     end
 end)()
 
+-- Fog
+coroutine.wrap(function()
+    while true do
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/End%20check.lua"))()
+    end
+end)()
+
 -- Manic Eyes
 coroutine.wrap(function()
     while true do
