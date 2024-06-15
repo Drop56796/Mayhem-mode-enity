@@ -50,16 +50,6 @@ coroutine.wrap(function()
     end
 end)()
 
--- Fog
-coroutine.wrap(function()
-    while true do
-        wait(0)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-        if game.ReplicatedStorage.GameData.LatestRoom.Value == 49 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Hoangnguyen72628/MayhemMode/main/ObfuscatedEntities/Fog-obfuscated.lua"))()
-    end
-end)()
-
 -- Blackout
 coroutine.wrap(function()
     while true do
