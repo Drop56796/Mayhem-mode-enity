@@ -1,14 +1,4 @@
--- Twiser
-coroutine.wrap(function()
-    while true do
-        wait(math.random(750,900))
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(1)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/enity.lua"))()
-    end
-end)()
-
--- Hard Obsession
+-- Obsession
 coroutine.wrap(function()
     while true do
         wait(math.random(150,250))
@@ -72,6 +62,16 @@ coroutine.wrap(function()
         wait(math.random(1,100))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/ObfuscatedEntities/Manic%20Eyes-obfuscated.lua"))()
+    end
+end)()
+
+-- Twiser
+coroutine.wrap(function()
+    while true do
+        wait(math.random(750,900))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.5)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/enity.lua"))()
     end
 end)()
 
