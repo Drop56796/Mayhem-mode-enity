@@ -1,4 +1,7 @@
-
+--Fixed Mode by Darkness Original mode by Ame
+--The Mode not make by me Is Ame
+--Try to survive the enity and Encounter the entity 
+--Enity:Twiser Fog Manci Rush Manci Ambush Hard Obsession Threat
 
 local v0 = string.char;
 local v1 = string.byte;
