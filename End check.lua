@@ -1,14 +1,6 @@
---生成时生成雾
-local lighting = game:GetService("Lighting")
-
-lighting.FogColor = Color3.new(0, 0, 0)
-
-lighting.FogStart = 0
-lighting.FogEnd = 150
-
 --进入图书馆变成白雾
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
+if game.ReplicatedStorage.GameData.LatestRoom.Value == 49 then
 local lighting = game:GetService("Lighting")
 
 lighting.FogColor = Color3.new(1, 1, 1)
