@@ -46,10 +46,32 @@ lighting.FogEnd = 150
 end
 end)
 
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check4.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check3.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check2.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check1.lua"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hoangnguyen72628/MayhemMode/main/ObfuscatedEntities/Fog-obfuscated.lua"))()
 
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-if game.ReplicatedStorage.GameData.LatestRoom.Value == 100 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check4.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check3.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check2.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check1.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check4.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check3.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check2.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/check1.lua"))()
+
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hoangnguyen72628/MayhemMode/main/ObfuscatedEntities/Fog-obfuscated.lua"))()
