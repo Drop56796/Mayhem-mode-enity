@@ -78,10 +78,10 @@ end)()
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed and Another Mayhem Mode V0.2.1",true)
 wait(3)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("The Fixed mode by Darkness",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("The Fixed mode by Darkness and Munciseek",true)
 wait(3)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Original Version Mayhem mode by Ame Fixed Version Mayhem mode by Darkness",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Original Version Mayhem mode by Ame Fixed Mayhem mode by Darkness and Munciseek ",true)
 wait(3)
 
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Try to Play and Escape Insane Hotel or Encounter and Survive the Entity",true)
