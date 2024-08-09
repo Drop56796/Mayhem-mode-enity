@@ -10,7 +10,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Spawner.createEntity({
     CustomName = "twiser",
     Model = "https://github.com/Jahani-john/mayhem-mode/blob/main/mayhemmode-main/Scream.Stare.Twister.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 100,
+    Speed = 500,
     MoveDelay = 2,
     HeightOffset = 0,
     CanKill = true,
@@ -23,8 +23,8 @@ local entity = Spawner.createEntity({
     },
     Cycles = {
         Min = 1,
-        Max = 1,
-        Delay = 2
+        Max = 7,
+        Delay = 0.89999999
     },
     CamShake = {
         Enabled = true,
@@ -33,7 +33,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"Custom", "death", "message", "goes", "here."},
+    DeathMessage = {"u...", "death", "...", "..", "..."},
     IsCuriousLight = false
 })
 
