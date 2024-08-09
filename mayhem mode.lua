@@ -75,10 +75,65 @@ coroutine.wrap(function()
     end
 end)()
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed Mayhem mode Intiated (Original Mode Create By Ame)",true)
+local TextChatService = game:GetService("TextChatService")
+
+local whitelist = {
+    "Nys195",
+}
+
+local function isWhitelisted(username)
+    for _, whitelistedUser in ipairs(whitelist) do
+        if whitelistedUser == username then
+            return true
+        end
+    end
+    return false
+end
+
+TextChatService.OnIncomingMessage = function(msg)
+    local p = Instance.new("TextChatMessageProperties")
+
+    if msg.TextSource then
+        local username = msg.TextSource.Name
+        if isWhitelisted(username) then
+            p.PrefixText = "<font color='#0000FF'>[Credit]</font> " .. msg.PrefixText
+        else
+            p.PrefixText = "<font color='#FF0000'>[Player]</font> " .. msg.PrefixText
+        end
+    end
+    
+    return p
+end
+
+local TextChatService = game:GetService("TextChatService")
+local whitelist = {
+    "sansheq",
+}
+
+local function isWhitelisted(username)
+    for _, whitelistedUser in ipairs(whitelist) do
+        if whitelistedUser == username then
+            return true
+        end
+    end
+    return false
+end
+
+TextChatService.OnIncomingMessage = function(msg)
+    local p = Instance.new("TextChatMessageProperties")
+    if msg.TextSource then
+        local username = msg.TextSource.Name
+        if isWhitelisted(username) then
+            p.PrefixText = "<font color='#FF110F'>[Dev]</font> " .. msg.PrefixText
+        end
+    end
+    return p
+end
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed Mayhem mode Intiated (Original Credit By Ame)",true)
 wait(3)
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("The Fixed mode Create Darkness ＆ Munciseek",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("The Fixed mode Create A_Player ＆ Munciseek",true)
 wait(3)
 
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Try to Play and Escape Insane Hotel or Encounter and Survive the Entity",true)
