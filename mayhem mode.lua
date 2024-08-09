@@ -77,36 +77,13 @@ end)()
 
 local TextChatService = game:GetService("TextChatService")
 
+-- 白名单用户列表
 local whitelist = {
     "Nys195",
 }
 
-local function isWhitelisted(username)
-    for _, whitelistedUser in ipairs(whitelist) do
-        if whitelistedUser == username then
-            return true
-        end
-    end
-    return false
-end
-
-TextChatService.OnIncomingMessage = function(msg)
-    local p = Instance.new("TextChatMessageProperties")
-
-    if msg.TextSource then
-        local username = msg.TextSource.Name
-        if isWhitelisted(username) then
-            p.PrefixText = "<font color='#0000FF'>[Credit]</font> " .. msg.PrefixText
-        else
-            p.PrefixText = "<font color='#FF0000'>[Player]</font> " .. msg.PrefixText
-        end
-    end
-    
-    return p
-end
-
-local TextChatService = game:GetService("TextChatService")
-local whitelist = {
+-- 开发者列表
+local devs = {
     "sansheq",
 }
 
@@ -119,14 +96,30 @@ local function isWhitelisted(username)
     return false
 end
 
-TextChatService.OnIncomingMessage = function(msg)
-    local p = Instance.new("TextChatMessageProperties")
-    if msg.TextSource then
-        local username = msg.TextSource.Name
-        if isWhitelisted(username) then
-            p.PrefixText = "<font color='#FF110F'>[Dev]</font> " .. msg.PrefixText
+local function isDev(username)
+    for _, devUser in ipairs(devs) do
+        if devUser == username then
+            return true
         end
     end
+    return false
+end
+
+TextChatService.OnIncomingMessage = function(msg)
+    local p = Instance.new("TextChatMessageProperties")
+
+    if msg.TextSource then
+        local username = msg.TextSource.Name
+        
+        if isWhitelisted(username) then
+            p.PrefixText = "<font color='#0000FF'>[Credit]</font> " .. msg.PrefixText
+        elseif isDev(username) then
+            p.PrefixText = "<font color='#00FF00'>[Dev]</font> " .. msg.PrefixText
+        else
+            p.PrefixText = "<font color='#FF0000'>[Player]</font> " .. msg.PrefixText
+        end
+    end
+    
     return p
 end
 
