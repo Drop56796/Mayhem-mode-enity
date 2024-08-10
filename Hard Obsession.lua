@@ -10,7 +10,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 local entity = Spawner.createEntity({
     CustomName = "Obsession",
-    Model = "https://github.com/Jahani-john/mayhem-mode/blob/main/mayhemmode-main/Greed.Obssesion.rbxm?raw=true?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+    Model = "https://github.com/Jahani-john/mayhem-mode/blob/main/mayhemmode-main/Greed.Obssesion.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 125,
     MoveDelay = 1,
     HeightOffset = 0,
