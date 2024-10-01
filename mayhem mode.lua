@@ -122,6 +122,20 @@ TextChatService.OnIncomingMessage = function(msg)
     
     return p
 end
+-- Function to lower the pitch of 'SeekMusic'
+local function lowerPitch(sound)
+    sound.PlaybackSpeed = sound.PlaybackSpeed * 0.69 -- Example: reduce pitch by 10%
+end
+
+-- Iterate through all services and their descendants
+for _, service in ipairs(game:GetChildren()) do
+    for _, descendant in ipairs(service:GetDescendants()) do
+        if descendant:IsA("Sound") and descendant.Name == "SeekMusic" then
+            lowerPitch(descendant)
+        end
+    end
+end
+
 
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed Mayhem mode Intiated (Original Credit By Ame)",true)
 wait(3)
