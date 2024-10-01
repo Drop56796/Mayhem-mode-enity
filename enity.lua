@@ -10,7 +10,7 @@ local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = spawner.Create({
 	Entity = {
 		Name = "Twisted",
-		Asset = "https://github.com/Jahani-john/mayhem-mode/blob/main/mayhemmode-main/Scream.Stare.Twister.rbxm",
+		Asset = "https://github.com/Jahani-john/mayhem-mode/blob/main/mayhemmode-main/Scream.Stare.Twister.rbxm?raw=true",
 		HeightOffset = 0
 	},
 	Lights = {
@@ -30,8 +30,8 @@ local entity = spawner.Create({
 		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 300,
-		Delay = 2,
+		Speed = 500,
+		Delay = 0.85,
 		Reversed = false
 	},
 	Rebounding = {
@@ -43,7 +43,7 @@ local entity = spawner.Create({
 	},
 	Damage = {
 		Enabled = true,
-		Range = 40,
+		Range = 100,
 		Amount = 125
 	},
 	Crucifixion = {
@@ -53,7 +53,7 @@ local entity = spawner.Create({
 		Break = true
 	},
 	Death = {
-		Type = "Guiding", -- "Curious"
+		Type = "Curious", -- "Curious"
 		Hints = {"oh hi I'm in there", "U died with Twisted", "good bye", ":)"},
 		Cause = "Twister"
 	}
