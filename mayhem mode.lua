@@ -75,6 +75,15 @@ coroutine.wrap(function()
     end
 end)()
 
+coroutine.wrap(function()
+    while true do
+        wait(math.random(900,900))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.5)
+        loadstring(game:HttpGet('https://github.com/Drop56796/Mayhem-mode-enity/blob/main/tb.lua?raw=true'))()
+    end
+end)()
+
 local TextChatService = game:GetService("TextChatService")
 
 -- 白名单用户列表
