@@ -146,3 +146,23 @@ wait(3)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Try to Play and Escape Insane Hotel or Encounter and Survive the Entity",true)
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/loader.lua'))()
+
+local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.IntroText
+local intro = shut:Clone()
+intro.Parent = game.Players.LocalPlayer.PlayerGui.MainUI
+intro.Name = "IntroTextPleaseThankYou"
+intro.Visible = true
+intro.Text = "Forgetted Hotel"
+intro.TextTransparency = 0
+local underline = UDim2.new(1.1, 0, 0.015, 6)
+game.TweenService:Create(intro.Underline, TweenInfo.new(3), {Size = underline}):Play()
+wait(7)
+game.TweenService:Create(intro.Underline, TweenInfo.new(1.3), {Size = UDim2.new(0.95, 0, 0.015, 6)}):Play()
+wait(1)
+game.TweenService:Create(intro.Underline, TweenInfo.new(2), {ImageTransparency = 1}):Play()
+game.TweenService:Create(intro, TweenInfo.new(2), {TextTransparency = 1}):Play()
+game.TweenService:Create(intro.Underline, TweenInfo.new(7), {Size = UDim2.new(0, 0, 0.015, 6)}):Play()
+wait(2.3)
+intro.Visible = false
+wait(5)
+intro:Destroy()
